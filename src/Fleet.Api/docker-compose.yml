@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fleet-api:
+    image: ${DOCKER_REGISTRY-}fleet-api
+    build:
+      context: .
+      dockerfile: Fleet.Api/Dockerfile
